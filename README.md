@@ -81,8 +81,38 @@ Existen operadores aritméticos, relacionales, lógicos, de incremento y decreme
 Se pueden utilizar paréntesis `()` para definir el orden de las operaciones
 
 ### Suma
-
+Este operador usa el simbolo `+` :
+```Python
+suma = 18 + 20
+print(suma)
+[output] 38
+```
+Tambien se puede asignar valores a variables y sumar esas variables:
+```Python
+x = 6
+y = 18
+suma = x + y
+print(suma)
+[output] 24
+```
+Y por supuesto se puede sumar mas de dos variables:
+```Python
+x = 14 
+y = 4
+z = 10
+suma = x + y + z
+print(suma)
+[output] 28
+```
 ### Resta
+Este operador tiene como signo al `-` :
+```Python
+x = 10
+y = 5
+resta = x - y
+print(resta)
+[output] 5
+```
 ### Multiplicación
 ### División
 ### Módulo
