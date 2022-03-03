@@ -222,7 +222,9 @@ Operadores de igual procedencia y se evalúan de derecha a izquierda
 ```
 # Tipos de datos en Python
 ## Integer
+
 ## Float
+
 ## String
 ## Casting en Python
 ## List
