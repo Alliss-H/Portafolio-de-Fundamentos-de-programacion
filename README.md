@@ -62,7 +62,7 @@ x= 6;   y=10;   z= 3
 ```
 `Asignación múltiple`
 ```Python
-monday, month, year= “martes”, “marzo”, 2001
+day, month, year= “martes”, “marzo”, 2001
 ```
 `Asignación del mismo valor`
 ```Python
@@ -72,7 +72,6 @@ base = altura = 6
 ```Python
 base= 13, altura= 55
 base, altura= altura, base
-monday, month, year= “martes”, “marzo”, 2001
 ```
 
 ## Operadores básicos
