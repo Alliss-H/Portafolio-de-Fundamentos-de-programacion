@@ -1,5 +1,5 @@
 "# PROYECTO_" 
-# Proyecto-Fundamentos
+# Portafolio de Fundamentos de programacion
 # ¿Qué es Python?
 Python es un lenguaje de programación interpretado que lo hace sencillo de leer y escribir. Es multiparadigma, permite varios estilos además otros paradigmas están soportados mediante el uso de extensiones.
 ```Python
