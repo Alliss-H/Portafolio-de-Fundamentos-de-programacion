@@ -89,10 +89,10 @@ Se pueden utilizar paréntesis `()` para definir el orden de las operaciones
 
  
 `Operadores Relacionales`
-Estos símbolos se utilizan para compara valores, su resultado siempre será un valor lógico `True o False`
+Estos símbolos se utilizan para comparar valores, su resultado siempre será un valor lógico `True o False`
 Tenemos los símbolos:
 
-`== : Igual que `
+`== : Igual que`
 ```Python
 4 == 4
 [output] True
@@ -150,7 +150,7 @@ not True
 ```
 
 `Operadores de Incremento y Decremento`
-Estos operadores son asignaciones con operadores porque están combinados con el símbolo `=` y este es un operador de asignación. Tenemos los símbolos:
+Estos operadores son asignaciones con operadores porque están combinados con el símbolo `=`. Tenemos los símbolos:
 
 `+=`
 ```Python
@@ -164,7 +164,7 @@ a-=5
 [Equivalente a ]   a=a-5
 ```
 
-`*= `
+`*=`
 ```Python
 a*=5
 [Equivalente a ]   a=a*5
@@ -182,13 +182,13 @@ a%=5
 [Equivalente a ]  a=a%5
 ```
 Nota:
-
 Hay que tener en cuenta la prioridad de Operadores:
 ```
 Paréntesis
 Potencia 
 Multiplicación y división 
-Suma y resta Operadores y se evalúan de derecha a izquierda
+Suma y resta 
+Operadores de igual procedencia y se evalúan de derecha a izquierda
 ```
 # Tipos de datos en Python
 ## Integer
