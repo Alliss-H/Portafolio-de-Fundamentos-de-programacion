@@ -114,10 +114,43 @@ print(resta)
 [output] 5
 ```
 ### Multiplicación
-### División
-### Módulo
+Este operador usa el signo `*`:
+```Python
+x= 8
+y= 5
+multiplicacion = x * y
+print(multiplicacion)
+[output] 40
+```
 
- 
+### División
+Este operador usa el signo `/`:
+```Python
+x = 18
+y = 9
+division = x / y
+print(division)
+[output] 2
+```
+
+Tambien existe la division entera su símbolo es `//`:
+```Python
+x= 78
+y = 2
+div_entera= x // y
+print(div_entera)
+[output] 6
+```
+
+### Módulo
+Este operador usa el símbolo `%` se usa asi:
+```Python
+x = 18
+y = 7
+modulo = x % y
+print(modulo)
+[output] 4
+ ```
 `Operadores Relacionales`
 Estos símbolos se utilizan para comparar valores, su resultado siempre será un valor lógico `True o False`
 Tenemos los símbolos:
@@ -222,17 +255,65 @@ Operadores de igual procedencia y se evalúan de derecha a izquierda
 ```
 # Tipos de datos en Python
 ## Integer
-
+Son la representacion de los números enteros `int` ya sean positivos o negativo
+```Python
+nun_1= 100
+num_2= 34
+```
 ## Float
-
+Son la representacion de los números enteros o flotantes `float`  
+```Python
+nun_1= 10.3
+num_2= 5.9
+```
 ## String
+Son la representación de caracteres que forman palabras y se representan por comillas simples `' '` o dobles `" "`
+```Python
+print("Hola")
+nombre = "Allisson"
+print("nombre")
+```
 ## Casting en Python
+Es aquello que sirve y se utiliza para convertir un tipo de dato a un dato totalmente diferente osea:
+```Python
+int a str: str(65)
+str a int: int("1034")
+float a int: int(3.5)
+```
 ## List
+List en python son variables que almacenan varios tipos de datos en orden
+```Python
+lista_compras = ["carne", "pan", "queso", "pollo", 12, 21, 36]
+print(lista_compras)
+[output] [carne, pan, queso pollo, 12, 21, 36]
+```
 ## Tuple
+Es un conjunto ordenado e inmutable de elementos del mismo o diferente tipo.
+```Python
+(1, "a", 1.1, 2, "b", 2.2).
+print(ejemplo)
+[output] (1, a, 1.1, 2, b, 2.2)
+```
 ## Dictionary
+Los diccionarios en python son un tipo de dato que se categoriza como una "colección" el cual permite guardar elementos (Clave:Valor). Estos elementos se declaran con llaves {} y se separan con comas , y cada elemento se define con su palabra clave, este debe ser un dato no mutable y un valor cualquiera:
+```Python
+#se usa de la siguiente manera:
+dic1={ }
+
+#aqui creamos uno con claves y valores
+dicCantidad={"banana":50,"mango":2,"sandia":15}
+```
 # Tomando decisiones
 ## Sentencia if
+IF es una estructura de control que ejecuta el programa cuando se cumpla cierta condición de dato Booleano.
+
 ## Ciclo For
+El cual es una estructura de control que nos permite repetir sentencias(una serie de instrucciones) un número determinado de veces
+
+°Al usar un ciclo for tambien usaremos la función range que nos permitira controlar el números de ciclos o veces que interactue el bucle for.
 ## Ciclo While
+El ciclo while es una estructura de control o de repetición, que inician o repiten un bloque de instrucciones si se cumple una condicion o mientras se cumple cierta condicion.
 ## Break
+La instrucción break le proporciona la oportunidad de cerrar un bucle cuando se activa una condición externa. Debe poner la instrucción break dentro del bloque de código bajo la instrucción de su bucle, generalmente después de una instrucción if condicional. 
 ## Continue
+El uso de continue al igual que el ya visto break, nos permite modificar el comportamiento de de los bucles while y for. La diferencia entre el break y continue es que el continue no rompe el bucle, si no que pasa a la siguiente iteración saltando el código pendiente.
