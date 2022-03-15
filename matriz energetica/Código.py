@@ -23,17 +23,15 @@ informacion = {
 
 costa = tot_coca_codo_g + tot_sopladora_g
 sierra = tot_sopladora_q + tot_coca_codo_q + tot_sopladora_l
-oriente = ('No hay planta en oriente')
+oriente = ('No existe esta planta en oriente')
 
 print('''
-    ===============================
-     TODAS LAS PLANTAS ENERGETICAS
-    ===============================
+ PLANTAS ENERGETICAS
     ''')
 print('<1>. Total de Megavatios en Planta y Ciudad ')
 print('<2>. Total de Energia por Ciudad ')
 print('<3>. Dinero Recaudado por Region ')
-print('<4>. Escriba (salir) para Salir del programa')
+print('<4>. Escriba (salir) para terminar')
 opcion = input('Elija una opcion: ')
 
 if opcion == 'salir':
@@ -44,17 +42,12 @@ if opcion == 'salir':
 elif opcion == '1':
     
     print('''
-    ===============================
-         TOTAL DE MEGAVATIVOS
-               PLANTAS
-    Coca Codo Sinclair,Sopladora
-             EN CIUDADES
-        Guayaquil,Quito,Loja
-    ===============================
+    TOTAL DE MEGAVATIVOS EN LAS PLANTAS Coca Codo Sinclair / Sopladora
+    EN CIUDADES:
+    Guayaquil, Quito, Loja
     ''')
 
     n_planta = input('Ingrese el nombre de una planta: ')
-
     if n_planta == 'Coca Codo Sinclair':
         n_ciudad = input('Ingrese el nombre de la ciudad: ')
 
@@ -81,8 +74,7 @@ elif opcion == '1':
             print('Total de Megavatios de consumo en Sopladora, Loja: ', tot_sopladora_l)
             print('Con tarifa de: ', consumo_energia['Sopladora']['Loja']['tarifa'])
     else:
-        print("Digite correctamente la primera en mayuscula")
-
+        print("Escriba correctamente la primera letra en mayuscula")
     exit
        
 
@@ -90,16 +82,17 @@ elif opcion == '1':
 #son los nombres de las plantas generadoras y el valor es el total megavatios que cada
 #planta le ha dado a ciudad. Si la planta no entrega energía a la ciudad entonces esa planta
 #no debería aparecer en el nuevo diccionario  
+
 elif opcion == '2':
     print('''
-    ===============================
-    TOTAL DE ENERGIA DADA A CADA
-       CIUDAD POR CADA PLANTA
-            EN CIUDADES
-    Guayaquil
-    Quito
-    Loja
-    ===============================
+    TOTAL DE ENERGIA De CADA CIUDAD POR CADA PLANTA
+    EN CIUDADES:
+    - Guayaquil
+    - Quito
+    - Loja
+    - Ambato
+    - Nueva Loja
+    - Tena
     '''),
 
     n_ciudad2 = input('Ingrese una de las ciudades: ')
@@ -111,11 +104,10 @@ elif opcion == '2':
         print('Total de Megavatios, Coca Codo Sinclair: ', tot_coca_codo_q, 'Megavatios')
         print('Total de Megavatios, Sopladora:', tot_sopladora_q, 'Megavatios')
     elif n_ciudad2 == 'Loja':
-        print('Total de MMegavatios, Sopladora:', tot_sopladora_l, 'Megavatios')
+        print('Total de Megavatios, Sopladora:', tot_sopladora_l, 'Megavatios')
     else:
-        print('Ninguna planta otorga energía la ciudad seleccionada')
+        print('Ninguna planta da energía la ciudad seleccionada')
     print()
-
     exit
 
 
@@ -123,16 +115,13 @@ elif opcion == '2':
 #región
 elif opcion == '3':
     print('''
-    ===============================
-         EL DINERO RECAUDADO 
-            EN REGIONES
-    Costa
-    Sierra
-    Oriente
-    ===============================
+    DINERO RECAUDADO EN LAS REGIONES:
+    - Costa
+    - Sierra
+    - Oriente
     '''),
 
-    n_region = input('Ingrese nombre de Región: ')
+    n_region = input('Ingrese nombre de una Región: ')
 
     if n_region == 'Costa':
         print('Total Recaudado en la Región Costa: ', costa, '$')
@@ -141,5 +130,5 @@ elif opcion == '3':
     elif n_region == 'Oriente':
         print(oriente)
     else:
-        print("Digite correctamente la primera en mayuscula")
+        print("Escriba correctamente la primera letra en mayuscula")
     exit
